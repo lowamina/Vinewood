@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Vinewood Auto | Rims, Accessories &amp; Service Essentials | Colombo 7</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--black:#09090a;--coal:#121214;--edge:#2a2622;--copper:#c07a52;--copper-l:#e8b48d;--steel:#c9c9cc;--text:#ecebe8;--muted:#8f8b86;--wa:#1faa52}
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--text);font-family:'Outfit',system-ui,sans-serif;font-weight:300;font-size:16px;line-height:1.65;overflow-x:hidden}
+  a{color:inherit}
+  h1,h2,h3{font-family:'Bodoni Moda',Georgia,serif;font-weight:500;margin:0;line-height:1.08}
+  .wrap{width:min(1120px,92vw);margin:0 auto}
+  .spaced{font-family:'Outfit',sans-serif;font-weight:400;font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;color:var(--copper-l)}
+  .copper{background:linear-gradient(100deg,#8e5236,#e8b48d 45%,#b56c45 75%,#f0c7a6);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .btn{display:inline-block;padding:.9rem 1.6rem;font-family:inherit;font-weight:600;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--copper);cursor:pointer;background:transparent;color:var(--text)}
+  .btn:hover{background:rgba(192,122,82,.14)}
+  .btn-fill{background:linear-gradient(100deg,#9c5c3c,#c98a62);border-color:transparent;color:#fff}
+  .btn-fill:hover{filter:brightness(1.1)}
+
+  .demo-banner{background:#1a120d;color:#e7cdb9;font-size:.76rem;text-align:center;padding:.5rem 1rem;letter-spacing:.04em}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(9,9,10,.94);border-bottom:1px solid var(--edge)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:74px}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+  .brand img{width:48px;height:48px;border-radius:50%}
+  .brand b{font-family:'Bodoni Moda',serif;font-weight:500;letter-spacing:.32em;font-size:1rem}
+  nav{display:flex;gap:2rem;align-items:center;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase}
+  nav a{text-decoration:none}
+  nav a:hover{color:var(--copper-l)}
+  .menu-btn{display:none;background:none;border:1px solid var(--edge);color:var(--text);padding:.45rem .8rem;font-family:inherit;cursor:pointer}
+
+  /* hero dossier */
+  .hero{padding:5rem 0 4.4rem;border-bottom:1px solid var(--edge);background:radial-gradient(60% 70% at 80% 30%,rgba(192,122,82,.14),transparent 70%)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+  .hero h1{font-size:clamp(2.8rem,6.6vw,5.4rem);margin:1.2rem 0 1.4rem}
+  .hero h1 i{font-style:italic}
+  .hero p{color:#bdb8b2;max-width:470px;margin:0 0 2rem;font-size:1.05rem}
+  .hero .btns{display:flex;gap:.8rem;flex-wrap:wrap}
+  .dossier{border:1px solid var(--edge);background:linear-gradient(180deg,#141313,#0c0c0d);padding:2rem;position:relative}
+  .dossier::before{content:"";position:absolute;inset:8px;border:1px solid rgba(192,122,82,.25);pointer-events:none}
+  .dossier .logo{width:92px;height:92px;border-radius:50%;margin:0 auto 1.2rem;display:block}
+  .dossier dl{margin:0;display:grid;gap:.85rem}
+  .dossier div{display:grid;grid-template-columns:110px 1fr;gap:1rem;border-bottom:1px solid var(--edge);padding-bottom:.7rem}
+  .dossier dt{font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);padding-top:.2rem}
+  .dossier dd{margin:0;font-weight:400}
+  .stamp{position:absolute;right:18px;bottom:16px;border:2px solid #a3372d;color:#c6463a;font-weight:600;font-size:.7rem;letter-spacing:.2em;padding:.25rem .6rem;transform:rotate(-8deg);text-transform:uppercase}
+
+  section{padding:5rem 0;border-bottom:1px solid var(--edge)}
+  .head{text-align:center;max-width:640px;margin:0 auto 3rem}
+  .head h2{font-size:clamp(2.2rem,4.8vw,3.4rem);margin:.9rem 0 .8rem}
+  .head p{color:var(--muted);margin:0}
+
+  /* three lines */
+  .lines{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--edge);border:1px solid var(--edge)}
+  .line{background:var(--black);padding:2.4rem 2rem;display:flex;flex-direction:column;gap:1rem}
+  .line svg{width:64px;height:64px}
+  .line h3{font-size:1.8rem}
+  .line p{margin:0;color:var(--muted)}
+  .line ul{margin:0;padding:0;list-style:none;display:grid;gap:.35rem;font-size:.92rem}
+  .line li::before{content:"\2014";color:var(--copper);margin-right:.6rem}
+
+  /* rim finder */
+  .finder{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:3rem;align-items:start}
+  .finder h2{font-size:clamp(2.2rem,4.8vw,3.4rem);margin:.9rem 0 .8rem}
+  .finder .lede{color:var(--muted);margin:0 0 1.6rem}
+  .sizes{display:flex;gap:.5rem;flex-wrap:wrap}
+  .size{width:64px;height:64px;border-radius:50%;border:1px solid var(--edge);background:transparent;color:var(--text);font-family:'Bodoni Moda',serif;font-size:1.15rem;cursor:pointer}
+  .size[aria-pressed="true"]{border-color:var(--copper);background:rgba(192,122,82,.16);color:var(--copper-l)}
+  .form{border:1px solid var(--edge);background:var(--coal);padding:2rem}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .field{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.1rem;min-width:0}
+  .field label,.lbl{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .field input,.field select{width:100%;min-width:0;font:inherit;font-weight:400;padding:.75rem .8rem;background:#0b0b0c;border:1px solid var(--edge);color:var(--text)}
+  .field input:focus,.field select:focus{outline:1px solid var(--copper);border-color:var(--copper)}
+  .field option{color:#000}
+  .lbl{display:block;margin-bottom:.6rem}
+  .err{color:#e08a7d;font-size:.88rem;min-height:1.2em;margin:0 0 .5rem}
+  .send{width:100%;background:var(--wa);color:#fff;border:0;padding:1rem;font-family:inherit;font-weight:600;letter-spacing:.06em;cursor:pointer;font-size:.95rem}
+  .send:hover{background:#178a42}
+  .sent{display:none;margin-top:.8rem;text-align:center;color:var(--muted);font-size:.9rem}
+  .sent.show{display:block}
+  .sent a{color:var(--copper-l);font-weight:600}
+
+  /* promise */
+  .promise{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+  .promise b{display:block;font-family:'Bodoni Moda',serif;font-weight:500;font-size:1.4rem;margin-bottom:.4rem}
+  .promise span{color:var(--muted);font-size:.9rem}
+
+  /* launch + hiring */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+  .panel{border:1px solid var(--edge);padding:2.2rem;background:var(--coal)}
+  .panel h3{font-size:2rem;margin:.8rem 0 .6rem}
+  .panel p{color:var(--muted);margin:0 0 1.4rem}
+  .panel ul{margin:0 0 1.4rem;padding-left:1.1rem;color:#cfcac4;font-size:.93rem}
+
+  /* visit */
+  .visit{text-align:center}
+  .visit h2{font-size:clamp(2rem,4.4vw,3rem);margin:.9rem 0}
+  .visit p{color:#cfcac4;margin:0 0 .4rem}
+  .visit .btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.8rem}
+
+  footer{padding:2rem 0;color:var(--muted);font-size:.8rem;letter-spacing:.08em}
+  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+  @media (max-width:940px){
+    .hero .wrap,.finder,.two{grid-template-columns:1fr}
+    .lines{grid-template-columns:1fr}
+    .promise{grid-template-columns:1fr 1fr}
+    nav{display:none}
+    nav.open{display:flex;flex-direction:column;align-items:flex-start;position:absolute;top:74px;left:0;right:0;background:var(--black);padding:1.2rem 4vw 1.4rem;border-bottom:1px solid var(--edge);gap:1.1rem}
+    .menu-btn{display:block}
+  }
+  @media (max-width:560px){
+    section{padding:3.8rem 0}
+    .grid3,.grid2{grid-template-columns:1fr}
+    .form,.panel,.dossier{padding:1.4rem}
+    .dossier div{grid-template-columns:1fr;gap:.1rem}
+    .size{width:56px;height:56px}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">DEMO by Code.lowa for Vinewood Auto. Opening date, products and services are placeholders. Remove this bar after approval.</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="Vinewood Auto logo"><b>VINEWOOD</b></a>
+    <nav id="nav">
+      <a href="#collection">Collection</a>
+      <a href="#rims">Find rims</a>
+      <a href="#launch">Launch</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="spaced">Project 001 &middot; Colombo 7</div>
+        <h1>Premium products.<br><span class="copper">Clean fit.</span><br><i>No compromises.</i></h1>
+        <p>Rims, auto accessories and service essentials, chosen piece by piece and fitted with care. Vinewood Auto is opening soon on Bullers Lane.</p>
+        <div class="btns">
+          <a class="btn btn-fill" href="#launch">Get launch updates</a>
+          <a class="btn" href="#rims">Find rims for my car</a>
+        </div>
+      </div>
+      <div class="dossier" aria-label="Project 001 details">
+        <img class="logo" src="img/logo.png" alt="">
+        <dl>
+          <div><dt>Project</dt><dd>Vinewood Auto</dd></div>
+          <div><dt>Status</dt><dd>Building, opening soon</dd></div>
+          <div><dt>Location</dt><dd>4A Bullers Lane, Colombo 7</dd></div>
+          <div><dt>Arrival</dt><dd>[Add opening date]</dd></div>
+          <div><dt>Contents</dt><dd>Rims &middot; Accessories &middot; Service items</dd></div>
+        </dl>
+        <span class="stamp">Opening soon</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLLECTION -->
+  <section id="collection">
+    <div class="wrap">
+      <div class="head">
+        <div class="spaced">The collection</div>
+        <h2>Three lines, <span class="copper">one standard</span></h2>
+        <p>Sample lists. The final ranges will match what arrives in store.</p>
+      </div>
+      <div class="lines">
+        <div class="line">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#c07a52" stroke-width="1.6"><circle cx="32" cy="32" r="28"/><circle cx="32" cy="32" r="7"/><path d="M32 4v21M32 39v21M4 32h21M39 32h21M12 12l15 15M37 37l15 15M52 12L37 27M27 37L12 52"/></svg>
+          <h3>Premium rims</h3>
+          <p>Performance and style for every build.</p>
+          <ul><li>Alloy and forged options</li><li>Sizes and fitments to order</li><li>Fitting and balancing</li></ul>
+        </div>
+        <div class="line">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#c07a52" stroke-width="1.6"><path d="M8 40l6-14c1-3 4-5 7-5h22c3 0 6 2 7 5l6 14"/><rect x="6" y="40" width="52" height="10" rx="3"/><circle cx="17" cy="50" r="5"/><circle cx="47" cy="50" r="5"/></svg>
+          <h3>Accessories</h3>
+          <p>Details that change how a car looks and feels.</p>
+          <ul><li>Mud flaps and sun visors</li><li>Carpets and interior trims</li><li>Lighting and electrical add-ons</li></ul>
+        </div>
+        <div class="line">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#c07a52" stroke-width="1.6"><path d="M40 8a14 14 0 0 0-12 20L10 46a6 6 0 0 0 8 8l18-18a14 14 0 0 0 20-12l-8 8-8-2-2-8z"/></svg>
+          <h3>Service essentials</h3>
+          <p>Everything your car needs between services.</p>
+          <ul><li>Oils and fluids</li><li>Filters and wipers</li><li>Care and cleaning products</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIM FINDER -->
+  <section id="rims">
+    <div class="wrap finder">
+      <div>
+        <div class="spaced">Rim finder</div>
+        <h2>The right rims, <span class="copper">first time</span></h2>
+        <p class="lede">Tell us your car and the size you're after. Our team will reply on WhatsApp with options that fit.</p>
+        <span class="lbl">Rim size</span>
+        <div class="sizes" id="sizes">
+          <button type="button" class="size" aria-pressed="false" data-v='15"'>15"</button>
+          <button type="button" class="size" aria-pressed="false" data-v='16"'>16"</button>
+          <button type="button" class="size" aria-pressed="true" data-v='17"'>17"</button>
+          <button type="button" class="size" aria-pressed="false" data-v='18"'>18"</button>
+          <button type="button" class="size" aria-pressed="false" data-v='19"'>19"</button>
+          <button type="button" class="size" aria-pressed="false" data-v='20"+'>20+</button>
+          <button type="button" class="size" aria-pressed="false" data-v="Not sure" style="font-size:.78rem">Not sure</button>
+        </div>
+      </div>
+      <form class="form" id="rimForm" novalidate>
+        <div class="grid3">
+          <div class="field"><label for="make">Make</label><input id="make" placeholder="e.g. Toyota"></div>
+          <div class="field"><label for="model">Model</label><input id="model" placeholder="e.g. Premio"></div>
+          <div class="field"><label for="year">Year</label><input id="year" inputmode="numeric" placeholder="2018"></div>
+        </div>
+        <div class="grid2">
+          <div class="field"><label for="style">Style</label>
+            <select id="style"><option>Sporty</option><option>Luxury</option><option>Off-road</option><option>Keep it close to stock</option></select></div>
+          <div class="field"><label for="finish">Finish</label>
+            <select id="finish"><option>Black</option><option>Silver</option><option>Gunmetal</option><option>Bronze / copper</option><option>Open to ideas</option></select></div>
+        </div>
+        <div class="field"><label for="rName">Your name</label><input id="rName" autocomplete="name" placeholder="Name"></div>
+        <p class="err" id="rErr" role="alert"></p>
+        <button class="send" type="submit">Send to Vinewood on WhatsApp</button>
+        <div class="sent" id="rSent"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section>
+    <div class="wrap">
+      <div class="promise">
+        <div><b>Premium rims</b><span>Performance and style</span></div>
+        <div><b>Quality accessories</b><span>Enhance every detail</span></div>
+        <div><b>Trusted sources</b><span>Carefully selected</span></div>
+        <div><b>Clean fitting</b><span>Precise workmanship</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAUNCH + HIRING -->
+  <section id="launch">
+    <div class="wrap two">
+      <div class="panel">
+        <div class="spaced">Launch list</div>
+        <h3>Be first through the door</h3>
+        <p>Get a WhatsApp message when Vinewood Auto opens, with opening-week news.</p>
+        <form id="notifyForm" novalidate>
+          <div class="field"><label for="nName">Your name</label><input id="nName" autocomplete="name" placeholder="Name"></div>
+          <div class="field"><label for="nCar">Your car (optional)</label><input id="nCar" placeholder="e.g. Honda Vezel"></div>
+          <p class="err" id="nErr" role="alert"></p>
+          <button class="send" type="submit">Notify me on WhatsApp</button>
+          <div class="sent" id="nSent"></div>
+        </form>
+      </div>
+      <div class="panel">
+        <div class="spaced">We're hiring</div>
+        <h3>Automotive accessories technician</h3>
+        <p>Colombo 7. Competitive salary based on experience and skill.</p>
+        <ul>
+          <li>Experience in automotive accessory fitting</li>
+          <li>Mud flaps, sun visors, carpets and trims</li>
+          <li>Basic electrical and accessory installation</li>
+          <li>Clean and precise workmanship</li>
+          <li>Responsible and punctual</li>
+        </ul>
+        <a class="btn" id="cvBtn" href="#">Send your CV on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="visit" style="border-bottom:0">
+    <div class="wrap">
+      <div class="spaced">Find us</div>
+      <h2>4A Bullers Lane, <span class="copper">Colombo 7</span></h2>
+      <p>Opening hours will be announced at launch.</p>
+      <p><a href="https://www.instagram.com/vinewood_auto" target="_blank" rel="noopener">@vinewood_auto</a></p>
+      <div class="btns">
+        <a class="btn btn-fill" href="https://www.google.com/maps/search/?api=1&amp;query=4A+Bullers+Lane+Colombo+7" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn" id="waBtn" href="#">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; Vinewood Auto Sri Lanka</span>
+    <span>Rims &middot; Accessories &middot; Service essentials</span>
+  </div>
+</footer>
+
+<script>
+var WA = '94773899239';
+var $ = function(id){ return document.getElementById(id); };
+function waUrl(text){ return 'https://wa.me/' + WA + (text ? '?text=' + encodeURIComponent(text) : ''); }
+function openWA(boxId, text){
+  var url = waUrl(text), box = $(boxId);
+  box.innerHTML = 'If WhatsApp did not open: <a target="_blank" rel="noopener">tap here to send</a>';
+  box.querySelector('a').href = url;
+  box.classList.add('show');
+  window.location.href = url;
+}
+
+$('waBtn').href = waUrl('Hi Vinewood Auto, I have a question.');
+$('waBtn').target = '_blank';
+$('cvBtn').href = waUrl('Hi Vinewood Auto, I would like to apply for the Automotive Accessories Technician role. I will send my CV here.');
+$('cvBtn').target = '_blank';
+
+/* rim sizes */
+$('sizes').addEventListener('click', function(e){
+  var b = e.target.closest('.size'); if (!b) return;
+  $('sizes').querySelectorAll('.size').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+  b.setAttribute('aria-pressed','true');
+});
+function size(){ var b = document.querySelector('#sizes [aria-pressed="true"]'); return b ? b.getAttribute('data-v') : 'Not sure'; }
+
+$('rimForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = $('rName').value.trim(), make = $('make').value.trim(), model = $('model').value.trim();
+  if (!make || !model) { $('rErr').textContent = 'Please add your car make and model.'; return; }
+  if (!name) { $('rErr').textContent = 'Please add your name.'; return; }
+  $('rErr').textContent = '';
+  openWA('rSent', 'Hi Vinewood Auto, I am ' + name + '. I am looking for rims.\nCar: ' + make + ' ' + model + ($('year').value.trim() ? ' (' + $('year').value.trim() + ')' : '') +
+    '\nSize: ' + size() + '\nStyle: ' + $('style').value + '\nFinish: ' + $('finish').value + '\n\nWhat options do you have?');
+});
+
+$('notifyForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = $('nName').value.trim();
+  if (!name) { $('nErr').textContent = 'Please add your name.'; return; }
+  $('nErr').textContent = '';
+  var car = $('nCar').value.trim();
+  openWA('nSent', 'Hi Vinewood Auto, I am ' + name + '. Please let me know when you open.' + (car ? '\nMy car: ' + car : ''));
+});
+
+/* mobile menu */
+$('menuBtn').addEventListener('click', function(){ $('nav').classList.toggle('open'); });
+document.querySelectorAll('#nav a').forEach(function(a){ a.addEventListener('click', function(){ $('nav').classList.remove('open'); }); });
+</script>
+</body>
+</html>
